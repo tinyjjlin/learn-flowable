@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:flowable="http://flowable.org/bpmn"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath"
+             targetNamespace="http://www.flowable.org/processdef">
+    <process id="financialReport" name="financialReport" isExecutable="true">
+        <documentation>Monthly financial report reminder process</documentation>
+        <startEvent id="theStart"></startEvent>
+        <userTask id="writeReportTask" name="writeReportTask" flowable:candidateGroups="accountancy"></userTask>
+        <userTask id="verifyReportTask" name="verifyReportTask">
+            <extensionElements>
+                <flowable:taskListener event="create" class="com.tiny.demo01.service.AssignmentHandler"/>
+            </extensionElements>
+        </userTask>
+        <endEvent id="theEnd"></endEvent>
+        <sequenceFlow id="flow1" sourceRef="theStart" targetRef="writeReportTask"></sequenceFlow>
+        <sequenceFlow id="flow2" sourceRef="writeReportTask" targetRef="verifyReportTask"></sequenceFlow>
+        <sequenceFlow id="flow3" sourceRef="verifyReportTask" targetRef="theEnd"></sequenceFlow>
+    </process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_financialReport">
+        <bpmndi:BPMNPlane bpmnElement="financialReport" id="BPMNPlane_financialReport">
+            <bpmndi:BPMNShape bpmnElement="theStart" id="BPMNShape_theStart">
+                <omgdc:Bounds height="30.0" width="30.0" x="90.0" y="150.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="writeReportTask" id="BPMNShape_writeReportTask">
+                <omgdc:Bounds height="80.0" width="100.0" x="165.0" y="125.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="verifyReportTask" id="BPMNShape_verifyReportTask">
+                <omgdc:Bounds height="80.0" width="100.0" x="310.0" y="125.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="theEnd" id="BPMNShape_theEnd">
+                <omgdc:Bounds height="28.0" width="28.0" x="455.0" y="151.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+                <omgdi:waypoint x="119.94999848995758" y="165.0"></omgdi:waypoint>
+                <omgdi:waypoint x="165.0" y="165.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+                <omgdi:waypoint x="264.95000000000005" y="165.0"></omgdi:waypoint>
+                <omgdi:waypoint x="310.0" y="165.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="flow3" id="BPMNEdge_flow3">
+                <omgdi:waypoint x="409.95000000000005" y="165.0"></omgdi:waypoint>
+                <omgdi:waypoint x="455.0" y="165.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</definitions>

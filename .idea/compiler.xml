@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flowble-demo01" />
+        <module name="flowable-demo01" />
+        <module name="holidayrequest" />
         <module name="spring-boot-flowable" />
         <module name="workflow-config" />
       </profile>

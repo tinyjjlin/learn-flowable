@@ -20,15 +20,15 @@ public class MyRestController {
     @Autowired
     private MyService myService;
 
-    @RequestMapping(value="/process", method= RequestMethod.POST)
-    public void startProcessInstance(@RequestBody StartProcessRepresentation startProcessRepresentation ) {
+    @RequestMapping(value = "/process", method = RequestMethod.POST)
+    public void startProcessInstance(@RequestBody StartProcessRepresentation startProcessRepresentation) {
         myService.startProcess(startProcessRepresentation.getAssignee());
     }
 
-    @RequestMapping(value="/tasks", method= RequestMethod.GET, produces= MediaType.APPLICATION_JSON_VALUE)
-    public List<TaskRepresentation> getTasks(@RequestParam String assignee) {
-        List<Task> tasks = myService.getTasks(assignee);
-        List<TaskRepresentation> dtos = new ArrayList<TaskRepresentation>();
+    @RequestMapping(value = "/tasks", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public List <TaskRepresentation> getTasks(@RequestParam String assignee) {
+        List <Task> tasks = myService.getTasks(assignee);
+        List <TaskRepresentation> dtos = new ArrayList <TaskRepresentation>();
         for (Task task : tasks) {
             dtos.add(new TaskRepresentation(task.getId(), task.getName()));
         }
@@ -62,12 +62,15 @@ public class MyRestController {
         public String getId() {
             return id;
         }
+
         public void setId(String id) {
             this.id = id;
         }
+
         public String getName() {
             return name;
         }
+
         public void setName(String name) {
             this.name = name;
         }

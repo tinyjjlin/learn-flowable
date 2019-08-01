@@ -33,13 +33,13 @@ public class MyService {
 
     public void startProcess(String assignee) {
         Person person = personRepository.findByUsername(assignee);
-        System.out.println("person..........."+person.getId());
-        Map<String, Object> variables = new HashMap<String, Object>(8);
+        System.out.println("person..........." + person.getId());
+        Map <String, Object> variables = new HashMap <String, Object>(8);
         variables.put("person", person);
-        runtimeService.startProcessInstanceByKey("oneTaskProcess",variables);
+        runtimeService.startProcessInstanceByKey("oneTaskProcess", variables);
     }
 
-    public List<Task> getTasks(String assignee) {
+    public List <Task> getTasks(String assignee) {
         return taskService.createTaskQuery().taskAssignee(assignee).list();
     }
 

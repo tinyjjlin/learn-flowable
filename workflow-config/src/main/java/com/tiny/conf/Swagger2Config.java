@@ -23,7 +23,8 @@ import java.util.List;
 @Configuration
 @EnableSwagger2
 public class Swagger2Config {
-    private String controller_package ="com.tiny";
+    private String controller_package = "com.tiny";
+
     /**
      * swagger2的配置文件
      */
@@ -31,7 +32,7 @@ public class Swagger2Config {
     @Bean
     public Docket createRestApi() {
         ParameterBuilder ticketPar = new ParameterBuilder();
-        List<Parameter> pars = new ArrayList<Parameter>();
+        List <Parameter> pars = new ArrayList <Parameter>();
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())

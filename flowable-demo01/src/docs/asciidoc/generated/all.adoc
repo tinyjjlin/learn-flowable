@@ -1,0 +1,297 @@
+= 后台服务接口
+
+
+[[_overview]]
+== Overview
+API 描述
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0
+
+
+=== Contact information
+[%hardbreaks]
+__Contact__ : tiny lin
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost:8031
+__BasePath__ : /
+
+
+=== Tags
+
+* financial-web : Financial Web
+
+
+
+
+[[_paths]]
+== Resources
+
+[[_financial-web_resource]]
+=== Financial-web
+Financial Web
+
+
+[[_gettaskassigneeusingget]]
+==== getTaskAssignee
+....
+GET /assigneeTask
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**assignee** +
+__required__|assignee|string
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< <<_taskrepresentation,TaskRepresentation>> > array
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `application/json`
+
+
+[[_gettaskusingget]]
+==== getTask
+....
+GET /candidateUserTask
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**assignee** +
+__required__|assignee|string
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< <<_taskrepresentation,TaskRepresentation>> > array
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `application/json`
+
+
+[[_claimtaskusingget]]
+==== claimTask
+....
+GET /claimTask
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**assignee** +
+__required__|assignee|string
+|**Query**|**taskId** +
+__required__|taskId|string
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_completetaskusingget]]
+==== completeTask
+....
+GET /completeTask
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**taskId** +
+__required__|taskId|string
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_gettasksgroupusingget]]
+==== getTasksGroup
+....
+GET /groupTask
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**group** +
+__required__|group|string
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< <<_taskrepresentation,TaskRepresentation>> > array
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `application/json`
+
+
+[[_startprocessinstanceusingpost]]
+==== startProcessInstance
+....
+POST /startProcess
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Query**|**assignee** +
+__optional__|assignee|string
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|No Content
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+
+
+[[_definitions]]
+== Definitions
+
+[[_taskrepresentation]]
+=== TaskRepresentation
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**id** +
+__optional__|string
+|**name** +
+__optional__|string
+|===
+
+
+
+
+
