@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:flowable="http://flowable.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.flowable.org/processdef">
+
+
+  <process id="orderProcess" name="order process">
+
+    <startEvent id="startEvent1"  ></startEvent>
+
+    <subProcess id="takeOrder" name="take order">
+      <startEvent id="sid-BCBDC05D-8FDC-479E-96FA-B66B1223B30E" ></startEvent>
+      <userTask id="enterOrderInfo" name="enter order info" flowable:assignee="${creator}" >
+        <extensionElements>
+          <modeler:activiti-idm-initiator xmlns:modeler="http://flowable.org/modeler"><![CDATA[true]]></modeler:activiti-idm-initiator>
+        </extensionElements>
+      </userTask>
+      <userTask id="checkOrderInfo" name="check order info" flowable:assignee="${creator}" >
+        <extensionElements>
+          <modeler:activiti-idm-initiator xmlns:modeler="http://flowable.org/modeler"><![CDATA[true]]></modeler:activiti-idm-initiator>
+        </extensionElements>
+      </userTask>
+      <endEvent id="sid-39FE17AF-1E12-4B20-8BDB-F9DD710D4F63"></endEvent>
+      <sequenceFlow id="sid-5651EEFE-091E-4F05-846C-50ED7A0DA391" sourceRef="enterOrderInfo" targetRef="checkOrderInfo"></sequenceFlow>
+      <sequenceFlow id="sid-EC6848E8-4C41-4F87-871C-6E4ACF6CE100" sourceRef="checkOrderInfo" targetRef="sid-39FE17AF-1E12-4B20-8BDB-F9DD710D4F63"></sequenceFlow>
+      <sequenceFlow id="sid-08C9D585-B6FA-4B39-B82D-B36EF89E27CD" sourceRef="sid-BCBDC05D-8FDC-479E-96FA-B66B1223B30E" targetRef="enterOrderInfo"></sequenceFlow>
+    </subProcess>
+
+    <sequenceFlow id="sid-BEEC0181-E7A7-49F9-8328-6616180C6392" sourceRef="takeOrder" targetRef="receiveOrder"></sequenceFlow>
+    <userTask id="receiveOrder" name="receive order" flowable:assignee="receiver" >
+      <extensionElements>
+        <modeler:initiator-can-complete xmlns:modeler="http://flowable.org/modeler"><![CDATA[false]]></modeler:initiator-can-complete>
+      </extensionElements>
+    </userTask>
+
+    <endEvent id="sid-3DC0381E-F535-4583-BD23-DCC716095135"></endEvent>
+    <sequenceFlow id="sid-B9EB1244-BDDF-4703-B9C6-634524885B06" sourceRef="receiveOrder" targetRef="sid-3DC0381E-F535-4583-BD23-DCC716095135"></sequenceFlow>
+    <sequenceFlow id="sid-8136BDE8-760E-496C-B09C-58B8FC265AB6" sourceRef="startEvent1" targetRef="takeOrder"></sequenceFlow>
+  </process>
+
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_orderProcess">
+    <bpmndi:BPMNPlane bpmnElement="orderProcess" id="BPMNPlane_orderProcess">
+      <bpmndi:BPMNShape bpmnElement="startEvent1" id="BPMNShape_startEvent1">
+        <omgdc:Bounds height="30.0" width="30.0" x="90.0" y="137.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="takeOrder" id="BPMNShape_takeOrder">
+        <omgdc:Bounds height="214.0" width="451.0" x="195.0" y="45.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-BCBDC05D-8FDC-479E-96FA-B66B1223B30E" id="BPMNShape_sid-BCBDC05D-8FDC-479E-96FA-B66B1223B30E">
+        <omgdc:Bounds height="30.0" width="30.0" x="210.0" y="137.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="enterOrderInfo" id="BPMNShape_enterOrderInfo">
+        <omgdc:Bounds height="80.0" width="100.0" x="300.0" y="112.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="checkOrderInfo" id="BPMNShape_checkOrderInfo">
+        <omgdc:Bounds height="80.0" width="100.0" x="435.0" y="105.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-39FE17AF-1E12-4B20-8BDB-F9DD710D4F63" id="BPMNShape_sid-39FE17AF-1E12-4B20-8BDB-F9DD710D4F63">
+        <omgdc:Bounds height="28.0" width="28.0" x="600.0" y="131.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="receiveOrder" id="BPMNShape_receiveOrder">
+        <omgdc:Bounds height="80.0" width="100.0" x="765.0" y="112.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-3DC0381E-F535-4583-BD23-DCC716095135" id="BPMNShape_sid-3DC0381E-F535-4583-BD23-DCC716095135">
+        <omgdc:Bounds height="28.0" width="28.0" x="960.0" y="138.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-BEEC0181-E7A7-49F9-8328-6616180C6392" id="BPMNEdge_sid-BEEC0181-E7A7-49F9-8328-6616180C6392">
+        <omgdi:waypoint x="645.949999999926" y="152.0"></omgdi:waypoint>
+        <omgdi:waypoint x="764.9999999998684" y="152.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-EC6848E8-4C41-4F87-871C-6E4ACF6CE100" id="BPMNEdge_sid-EC6848E8-4C41-4F87-871C-6E4ACF6CE100">
+        <omgdi:waypoint x="534.95" y="145.0"></omgdi:waypoint>
+        <omgdi:waypoint x="600.0" y="145.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-08C9D585-B6FA-4B39-B82D-B36EF89E27CD" id="BPMNEdge_sid-08C9D585-B6FA-4B39-B82D-B36EF89E27CD">
+        <omgdi:waypoint x="239.9499988304931" y="152.0"></omgdi:waypoint>
+        <omgdi:waypoint x="300.0" y="152.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-B9EB1244-BDDF-4703-B9C6-634524885B06" id="BPMNEdge_sid-B9EB1244-BDDF-4703-B9C6-634524885B06">
+        <omgdi:waypoint x="864.9499999999605" y="152.0"></omgdi:waypoint>
+        <omgdi:waypoint x="960.0" y="152.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-5651EEFE-091E-4F05-846C-50ED7A0DA391" id="BPMNEdge_sid-5651EEFE-091E-4F05-846C-50ED7A0DA391">
+        <omgdi:waypoint x="399.95" y="149.4074074074074"></omgdi:waypoint>
+        <omgdi:waypoint x="435.0" y="147.58999999999997"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-8136BDE8-760E-496C-B09C-58B8FC265AB6" id="BPMNEdge_sid-8136BDE8-760E-496C-B09C-58B8FC265AB6">
+        <omgdi:waypoint x="119.94999981633005" y="152.0"></omgdi:waypoint>
+        <omgdi:waypoint x="195.0" y="152.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

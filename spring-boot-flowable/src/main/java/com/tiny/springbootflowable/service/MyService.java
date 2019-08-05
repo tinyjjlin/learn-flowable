@@ -33,6 +33,9 @@ public class MyService {
 
     public void startProcess(String assignee) {
         Person person = personRepository.findByUsername(assignee);
+        if(person == null){
+            return;
+        }
         System.out.println("person..........." + person.getId());
         Map <String, Object> variables = new HashMap <String, Object>(8);
         variables.put("person", person);

@@ -13,6 +13,7 @@
         <module>workflow-config</module>
         <module>spring-boot-flowable</module>
         <module>holidayrequest</module>
+        <module>flowable-02</module>
     </modules>
 
     <parent>
