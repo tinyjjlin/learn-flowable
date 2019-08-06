@@ -14,6 +14,7 @@
         <module>spring-boot-flowable</module>
         <module>holidayrequest</module>
         <module>flowable-02</module>
+        <module>flowable-03</module>
     </modules>
 
     <parent>

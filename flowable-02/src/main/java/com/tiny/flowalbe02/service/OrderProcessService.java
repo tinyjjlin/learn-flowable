@@ -3,6 +3,7 @@ package com.tiny.flowalbe02.service;
 import org.flowable.engine.RuntimeService;
 import org.flowable.engine.TaskService;
 import org.flowable.engine.history.HistoricProcessInstanceQuery;
+import org.flowable.engine.runtime.ChangeActivityStateBuilder;
 import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.task.api.Task;
 import org.flowable.task.api.history.HistoricTaskInstanceQuery;
@@ -43,6 +44,7 @@ public class OrderProcessService {
         List <Task> tasks = taskService.createTaskQuery().taskAssignee(assignee).list();
         System.out.println("task.......count..." + tasks.size());
         return tasks;
+
     }
 
     public void completeTask(String taskId,String taskName){
@@ -60,5 +62,10 @@ public class OrderProcessService {
 
     public void queryVar(){
         //historicTaskInstanceQuery.
+    }
+
+    public void changeActivity(){
+
+
     }
 }

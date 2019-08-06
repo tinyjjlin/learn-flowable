@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flowable-02" />
+        <module name="flowable-03" />
         <module name="flowable-demo01" />
         <module name="holidayrequest" />
         <module name="spring-boot-flowable" />

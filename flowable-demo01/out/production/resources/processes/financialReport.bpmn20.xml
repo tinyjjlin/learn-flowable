@@ -9,6 +9,7 @@
         <documentation>Monthly financial report reminder process</documentation>
         <startEvent id="theStart"></startEvent>
         <userTask id="writeReportTask" name="writeReportTask" flowable:candidateGroups="accountancy"></userTask>
+
         <userTask id="verifyReportTask" name="verifyReportTask">
             <extensionElements>
                 <flowable:taskListener event="create" class="com.tiny.demo01.service.AssignmentHandler"/>
