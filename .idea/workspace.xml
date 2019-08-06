@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3286129d-02d8-4dbf-93c6-2ba7e3bd9806" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flowable-03/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/controller/TakeOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/event/ProcessStartListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/sequenceflow/SequenceFlowEndListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/sequenceflow/SequenceFlowListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/sequenceflow/SequenceFlowStartListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/sequenceflow/SequenceFlowTakeListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/task/TaskAssignmentListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/task/TaskCompleteListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/task/TaskCreateListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/task/TaskDeleteListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/model/ProcessExecutionParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/model/TakeOrderApprovalParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/model/TaskRepresentation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/service/TakeOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flowable-03/src/main/resources/processes/takeOrderProcess.bpmn20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-02/src/main/java/com/tiny/flowalbe02/service/OrderProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-02/src/main/java/com/tiny/flowalbe02/service/OrderProcessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowable-demo01/out/production/resources/processes/financialReport.bpmn20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-demo01/out/production/resources/processes/financialReport.bpmn20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/SpringBootFlowableApplication$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/SpringBootFlowableApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/entity/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/repository/PersonRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/service/MyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/web/MyRestController$StartProcessRepresentation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/web/MyRestController$TaskRepresentation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-flowable/out/production/classes/com/tiny/springbootflowable/web/MyRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflow-config/out/production/classes/com/tiny/conf/Swagger2Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/learn-flowable.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/learn-flowable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/service/TakeOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/service/TakeOrderService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -232,7 +201,7 @@
           <entry key="class" value="3" />
           <entry key="gitignore" value="1" />
           <entry key="java" value="76" />
-          <entry key="md" value="8" />
+          <entry key="md" value="9" />
           <entry key="xml" value="24" />
           <entry key="xsd" value="1" />
           <entry key="yml" value="8" />
@@ -242,7 +211,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="JAVA" value="76" />
-          <entry key="Markdown" value="8" />
+          <entry key="Markdown" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="25" />
           <entry key="YAML" value="8" />
@@ -250,16 +219,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5843" />
-          <entry key="md" value="602" />
+          <entry key="java" value="5866" />
+          <entry key="md" value="629" />
           <entry key="xml" value="224" />
           <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5845" />
-          <entry key="Markdown" value="600" />
+          <entry key="JAVA" value="5868" />
+          <entry key="Markdown" value="627" />
           <entry key="XML" value="224" />
           <entry key="YAML" value="7" />
         </counts>
@@ -292,10 +261,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doc/learn-flowable.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="110">
+                <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/service/TakeOrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1553">
-              <caret line="128" column="66" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="66" />
+            <state relative-caret-position="453">
+              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -345,15 +326,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
               <caret line="336" column="9" selection-start-line="336" selection-start-column="9" selection-end-line="336" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-engine/6.3.0/flowable-engine-6.3.0-sources.jar!/org/flowable/engine/runtime/ChangeActivityStateBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="60" column="96" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -1179,7 +1151,6 @@
         <option value="$PROJECT_DIR$/flowable-02/src/main/java/com/tiny/flowalbe02/controller/OrderProcessController.java" />
         <option value="$PROJECT_DIR$/flowable-02/src/main/resources/processes/order-process.bpmn20.xml" />
         <option value="$PROJECT_DIR$/flowable-02/src/main/java/com/tiny/flowalbe02/model/TaskRepresentation.java" />
-        <option value="$PROJECT_DIR$/doc/learn-flowable.md" />
         <option value="$PROJECT_DIR$/flowable-02/src/main/java/com/tiny/flowalbe02/service/OrderProcessService.java" />
         <option value="$PROJECT_DIR$/flowable-03/pom.xml" />
         <option value="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/listener/SequenceFlowListener.java" />
@@ -1197,6 +1168,7 @@
         <option value="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/model/ProcessExecutionParams.java" />
         <option value="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/controller/TakeOrderController.java" />
         <option value="$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/service/TakeOrderService.java" />
+        <option value="$PROJECT_DIR$/doc/learn-flowable.md" />
       </list>
     </option>
   </component>
@@ -1224,9 +1196,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="108" />
-    <option name="y" value="306" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="119" />
+    <option name="y" value="19" />
     <option name="width" value="1927" />
     <option name="height" value="1065" />
   </component>
@@ -1268,6 +1240,11 @@
             <path>
               <item name="learn-flowable" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-flowable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-flowable" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-flowable" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-flowable" type="b2602c69:ProjectViewProjectNode" />
@@ -1432,7 +1409,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565085009645" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565091740897" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../learn-java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1584,7 +1561,7 @@
       <workItem from="1564649482247" duration="1574000" />
       <workItem from="1564705563586" duration="9620000" />
       <workItem from="1564964973483" duration="16076000" />
-      <workItem from="1565050560287" duration="15683000" />
+      <workItem from="1565050560287" duration="16547000" />
     </task>
     <servers />
   </component>
@@ -1597,7 +1574,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73649000" />
+    <option name="totallyTimeSpent" value="74513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1609,9 +1586,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="108" y="306" width="1927" height="1065" extended-state="1" />
+    <frame x="119" y="19" width="1927" height="1065" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2126406" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2126406" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1634,7 +1612,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49919656" visible="true" weight="0.011827957" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49919656" visible="true" weight="0.011827957" />
       <window_info anchor="bottom" id="Build" order="16" weight="0.32995495" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1769,16 +1747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
           <caret line="46" selection-start-line="46" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/learn-flowable.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="242">
-            <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -2061,11 +2029,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flowable-03/src/main/java/com/tiny/flowable03/service/TakeOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1553">
-          <caret line="128" column="66" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="66" />
+        <state relative-caret-position="453">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/learn-flowable.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="110">
+            <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

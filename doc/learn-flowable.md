@@ -1,6 +1,8 @@
 # learn flowable
 
+## flowable 用户任务
 
+参考： [flowable实战（十二）flowable 任务办理方式与办理人设置探讨](https://blog.csdn.net/zhongzk69/article/details/91489038)
 
 ## flowable 添加新功能
 1 流程自由调整，可以跳转到指定任务。

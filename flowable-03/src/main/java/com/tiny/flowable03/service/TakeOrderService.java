@@ -85,7 +85,6 @@ public class TakeOrderService {
         }else{
             taskService.setVariable(taskId,"orderStatus","已拒签" );
         }
-
         taskService.complete(taskId);
     }
 
